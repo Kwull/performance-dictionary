@@ -8,13 +8,14 @@ namespace DictionaryPerformance.Output
         {
             Console.WriteLine("Note: Please run the test in Release mode outside Visual Studio");
             Console.WriteLine();
-            Console.WriteLine("Name                \tSize\t\tBegin\t\tMiddle\t\tEnd");
+            Console.WriteLine("Name                \tLookup         \tSize\t\tBegin\t\tMiddle\t\tEnd");
         }
 
         public void RenderResult(Result result)
         {
-            Console.WriteLine("{0,-20}\t{1}\t\t{2}\t\t{3}\t\t{4}",
+            Console.WriteLine("{0,-20}\t{1,-15}\t{2}\t\t{3}\t\t{4}\t\t{5}",
                               result.Name,
+                              result.LookupMode,
                               result.CollectionSize,
                               result.Begin,
                               result.Middle,

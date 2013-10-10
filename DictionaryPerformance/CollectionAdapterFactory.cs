@@ -12,7 +12,7 @@ namespace DictionaryPerformance
                  .Where(t => t.IsClass && !t.IsAbstract && t.GetInterfaces().Contains(typeof(ICollectionAdapter)))
                  .Select(Activator.CreateInstance)
                  .Cast<ICollectionAdapter>()
-                 .OrderBy(c => c.Name);
+                 .OrderByDescending(c=>c.LookupMode).ThenBy(c=>c.Name);
         }
     }
 }

@@ -4,6 +4,11 @@ namespace DictionaryPerformance.Adapters
 {
     public class HashSetAdapter : CollectionAdapterBase<HashSet<string>>
     {
+        public override string LookupMode
+        {
+            get { return "Contains(Key)"; }
+        }
+
         protected override void Add(string key, string value)
         {
             Collection.Add(key);

@@ -35,7 +35,7 @@ namespace DictionaryPerformance
             collection.CreateAndFillTestData(collectionSize);
             WarmUp(collection, collectionSize);
 
-            var result = new Result {CollectionSize = collectionSize, Name = collection.Name};
+            var result = new Result {CollectionSize = collectionSize, Name = collection.Name, LookupMode = collection.LookupMode};
             var beginWatch = new Stopwatch();
             var middleWatch = new Stopwatch();
             var endWatch = new Stopwatch();

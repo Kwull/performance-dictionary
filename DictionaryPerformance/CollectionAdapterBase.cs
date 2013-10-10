@@ -19,6 +19,8 @@ namespace DictionaryPerformance
             }
         }
 
+        public abstract string LookupMode { get; }
+
         protected abstract void Add(string key, string value);
 
         public abstract string Get(string key);

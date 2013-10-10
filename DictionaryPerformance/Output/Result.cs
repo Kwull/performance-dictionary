@@ -3,6 +3,7 @@
     public class Result
     {
         public string Name { get; set; }
+        public string LookupMode { get; set; }
         public int CollectionSize { get; set; }
         public long Begin { get; set; }
         public long Middle { get; set; }
