@@ -1,6 +1,8 @@
 .NET BCL collections performance
 ======================
 
+[![Build status](https://ci.appveyor.com/api/projects/status/lqxvbtl0tftoxyxn)](https://ci.appveyor.com/project/Kwull/performance-dictionary)
+
 Sometimes there is need to understand how the .NET BCL collection classes performs. This can help to choose proper collection for a solution. Bellow you can find the performance measurement and the BCL collections lookup and manipulation efficiency analyses.
 In the [C#/.NET Fundamentals: Choosing the Right Collection Class](http://geekswithblogs.net/BlackRabbitCoder/archive/2011/06/16/c.net-fundamentals-choosing-the-right-collection-class.aspx) blogpost you can find additional details.
 
